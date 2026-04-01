@@ -17,28 +17,28 @@ Kayky Kings
 
 Desenvolver, em grupo, um aplicativo Flutter seguindo a mesma proposta estrutural vista em aula, contendo:
 
-● Tela de Splash
+● **Tela de Splash**
 
-● Tela de Login
+● **Tela de Login**
 
-● Tela de Cadastro
+● **Tela de Cadastro**
 
-● Tela Home
+● **Tela Home**
 
-## Arquitetura e Organização
+# Arquitetura e Organização
 
-O projeto foi estruturado seguindo uma separação clara de responsabilidades:
-
-Models: Definição da entidade UsuarioModel com campos de nome, e-mail e senha.
-
-
-Views: Interfaces de usuário utilizando widgets básicos, TextFormField e layouts com Column, Row e Container.
+## O projeto foi estruturado seguindo uma separação clara de responsabilidades:
+---
+ Models:Definição da entidade UsuarioModel com campos de nome, e-mail e senha.
 
 
-ViewModels: Lógica de negócio separada da interface para garantir a manutenção do código.
+ Views: Interfaces de usuário utilizando widgets básicos, TextFormField e layouts com Column, Row e Container.
 
 
-Data (Mock Store): Gerenciamento de dados em memória utilizando o padrão Singleton.
+ ViewModels: Lógica de negócio separada da interface para garantir a manutenção do código.
+
+
+ Data (Mock Store): Gerenciamento de dados em memória utilizando o padrão Singleton.
 
 
 lib/
