@@ -25,6 +25,25 @@ Desenvolver, em grupo, um aplicativo Flutter seguindo a mesma proposta estrutura
 
 ● **Tela Home**
 
+# Funcionalidades
+
+Tela de Splash: Primeira tela do aplicativo com transição automática para o Login.
+
+
+Fluxo de Cadastro: Permite a criação de novos usuários que são armazenados temporariamente em memória.
+
+
+Autenticação: Validação de credenciais consultando a lista de usuários mockados.
+
+
+Navegação: Sistema de rotas entre Splash, Login, Cadastro e Home.
+
+
+Home Page: Tela de destino após um login bem-sucedido.
+
+
+
+
 # Arquitetura e Organização
 
 ## O projeto foi estruturado seguindo uma separação clara de responsabilidades:
@@ -51,6 +70,15 @@ lib/
      └── views/         # Interfaces (Splash, Login, Signup, Home)
 
      
+# Persistência em Memória
+Para simular um banco de dados sem o uso de APIs externas ou Firebase, foi implementada a classe UsuarioMockStore. Esta classe utiliza uma List<UsuarioModel> interna e fornece métodos para:
+
+
+Adicionar(UsuarioModel usuario): Insere um novo usuário na lista.
+
+
+Buscar(String email, String senha): Valida se as credenciais existem para permitir o login.
+
 
 ## Requisitos Técnicos Implementados
 
@@ -64,3 +92,13 @@ Persistência: Dados mantidos em memória durante a execução via List<UsuarioM
 
 
 Feedback Visual: Implementação de SnackBar para notificar sucesso ao realizar cadastro.
+
+## Comunicação View-ViewModel 
+
+Seguindo o padrão de projet, a interface não processa os dados diretamente:
+
+A View coleta as entradas através de TextEditingController.
+
+A ViewModel valida o estado do formulário via formKey.
+
+Se válido, os dados são enviados para o UsuarioMockStore e a View navega o usuário de volta para a tela de Login.
