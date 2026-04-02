@@ -6,11 +6,11 @@ Desenvolvimento de um pequeno aplicativo Flutter com navegação entre telas, us
 arquitetura organizada e armazenamento temporário de usuários em memória com dados mockados.
 
 Participantes: 
-João Miguel da Silva Cavalcante 
+João Miguel da Silva Cavalcante RA: 25001039
 
 Gabriel Henrique Sartório RA:25000700
 
-Kayky Juan Tavares dos Reis
+Kayky Juan Tavares dos Reis RA:25000079
 
 
 # Objetivo da atividade
